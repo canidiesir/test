@@ -1,0 +1,75 @@
+.max_bet{
+    color: #4E556A!important;
+}
+
+/* The checkbox_circle */
+.checkbox_circle {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #555872; 
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 0!important;
+  }
+  
+  /* Hide the browser's default radio button */
+  .checkbox_circle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark_circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    background-color: #2C2D3A;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark_circle:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox_circle input:checked ~ .check_label {
+    color: #CDD0E8;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .checkbox_circle input:checked ~ .checkmark_circle:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .checkbox_circle .checkmark_circle:after {
+      top: 6px;
+      left: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #FFCF72;
+  }
+
+  .flex_wrap{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .wrap_addition{
+      margin-right: 15px;
+      margin-bottom: 13px!important;
+  }

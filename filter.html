@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="modals.css" rel="stylesheet" />
+    <link href="filter.css" rel="stylesheet" />
+    <link href="history.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- CSS only -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css" integrity="sha512-8czuHxKbajKuQfbgBv5iwqftC1PbeLPmgVOYo8ZDlcOdi0OV18E+BbGQdqXs490kV9ZmJQTNupd0kvW8hokJlw==" crossorigin="anonymous" />
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Large Modal</h2>
+        <!-- Trigger the modal with a button -->
+        <a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</a>
+      
+        <!-- Modal -->
+<div id="myModal" class="modal fade in" role="dialog">
+    <div class="modal-dialog">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color: #CDD0E8;" class="modal-title">ფილტრი</h4>
+        </div>
+        <div class="modal-body">
+            <div style = "margin-bottom: 60px" class = "flex space_evenly">
+                <div class = "input_money flex">
+                    <input class = "enter_money" type="number" id="minMoney" />
+                    <label class = "left_margin" for="minMoney">მინ</label>
+                </div>
+    
+                <div class = "input_money flex">
+                    <input class = "enter_money" type="number" id="maxMoney" />
+                    <label class = "left_margin" for="maxMoney">მაქს</label>
+                </div>
+            </div>
+
+            <div class = "filter_slider box_margin flex" id="slider">
+                <div id = "first_money" class = "slider_money"></div>
+                <div id = "second_money" class = "slider_money"></div>
+            </div>
+          
+            <span class = "point_font">ქულა</span>
+
+            <div class = "wrap_small flex space_between box_margin">
+                <label class="checkbox_square">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">1</span>
+                </label>
+
+                <label class="checkbox_square">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">3</span>
+                </label>
+
+                <label class="checkbox_square">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">7</span>
+                </label>
+
+                <label class="checkbox_square">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">11</span>
+                </label>
+
+                <label class="checkbox_square">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">21</span>
+                </label>
+            </div>
+
+            <span class = "point_font">დავი</span>
+
+            <div class = "flex space_evenly box_margin">
+                <label class="checkbox_square limited_checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">არა</span>
+                </label>
+
+                <label class="checkbox_square limited_checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="check_label">დიახ</span>
+                </label>
+            </div>
+
+            <div class = "flex direction_column">
+              <a class = "h4_font h4_active">დამახსოვრება</a>
+              <a class = "h4_font">ფილტრის გაუქმება</a>
+            </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js" integrity="sha512-0Z2o7qmtl7ixxWcEQxxTCT8mX4PsdffSGoVJ7A80zqt6DvdEHF800xrsSmKPkSoUaHtlIhkLAhCPb/tkf78SCA==" crossorigin="anonymous"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+
+      const slider = document.getElementById('slider');
+
+      noUiSlider.create(slider, {
+          start: [0, 500],
+          connect: true,
+          range: {
+              'min': 0,
+              'max': 500
+          },
+      });
+
+      $("#minMoney").val(0);
+      $("#maxMoney").val(500);
+
+      $("#first_money").html($("#minMoney").val() + ' ₾');
+      $("#first_money").css({"bottom": "15px", "left": "-3px"});
+      $("#second_money").html($("#maxMoney").val() + ' ₾');
+      $("#second_money").css({"bottom": "15px", "right": "-15px"});
+
+      $("#minMoney").on("focusout" , function (event) {
+        let value = parseFloat($(this).val());
+        let high = parseFloat($("#maxMoney").val());
+        if(value > high || isNaN(value)) return;
+        if(value < 0) {
+          value = 0;
+          $("#minMoney").val(value);
+        }
+        slider.noUiSlider.set([value, null]);
+        $("#first_money").html(value + ' ₾');
+      });
+
+      $("#maxMoney").on("focusout" , function (event) {
+
+        let value = parseFloat($(this).val());
+        let low = parseFloat($("#minMoney").val());
+        if(value < low || isNaN(value)) return;
+        if(value > 500) {
+          value = 500;
+          $("#maxMoney").val(value);
+        }
+        slider.noUiSlider.set([null, value]);
+        $("#second_money").html(value + ' ₾');
+      });
+
+      slider.noUiSlider.on('slide', (values, handle) => {
+        $("#minMoney").val(parseInt(values[0]));
+        $("#maxMoney").val(parseInt(values[1]));
+
+        const first_circle = $("[data-handle='0']");
+        first_circle.prepend($('#first_money'))
+        
+        const second_circle = $("[data-handle='1']");
+        second_circle.prepend($('#second_money'))
+
+        $("#first_money").html(parseInt(values[0]) + ' ₾');
+        $("#second_money").html(parseInt(values[1]) + ' ₾');
+
+        $("#first_money").css({"bottom": "23px", "left": "-0.5px"});
+        $("#second_money").css({"bottom": "23px", "right": "-11.5px"});
+      });
+
+      $('.limited_checkbox input[type=checkbox]').on('change', function (e) {
+        if ($('.limited_checkbox input[type=checkbox]:checked').length > 1) {
+          $('.limited_checkbox input[type=checkbox]:checked').prop('checked', false);
+          $(this).prop('checked', true);
+        }
+      });
+
+      
+
+    </script>        
+    
+</body>
+</html>

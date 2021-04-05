@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="modals.css" rel="stylesheet" />
+    <link href="history.css" rel="stylesheet" />
+    <!-- CSS only -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Large Modal</h2>
+        <!-- Trigger the modal with a button -->
+        <a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</a>
+      
+        <!-- Modal -->
+<div id="myModal" class="modal fade in" role="dialog">
+    <div class="modal-dialog">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color: #CDD0E8;" class="modal-title">ისტორია</h4>
+        </div>
+        <div class="modal-body">
+            <div class = "flex scrollable"> 
+                <a class = "money_box">
+                    <img src="assets/images/options.svg">
+                </a>
+            
+                <a class = "money_box money history_box_addition money_box_active" >
+                    <span>ყველა</span>
+                </a>
+            
+                <a class = "money_box history_box_addition money">
+                    <span>მოგება</span>
+                </a>
+            
+                <a class = "money_box history_box_addition money">
+                    <span>წაგება</span>
+                </a>
+            </div>
+
+            <h3 class = "date">8 მაისი, 2020</h3>
+
+            <div class = "history_box">
+                
+                <div class = "header box_header_addition">
+
+                    <div>
+                        <span class = "num">#</span>
+                        <span class = "num">12983</span>
+                    </div>
+            
+                    <div>
+                        <span><img src="assets/images/clock.svg"></span>
+                        <span class = "time">12:10:11</span>
+                    </div>
+            
+                </div>
+
+                <div class = "header box_body_addition box_padding1">
+                    <div class = "flex_center">
+                        <span class = "light_font">tamarashvili123</span>
+                        <div class = "points dark_font">
+                            <span>0</span>
+                            <span>ქულა</span>
+                        </div>
+                    </div>
+                    
+                    <a class = "circle circle_addition_history">
+                        <img src="assets/images/watch_big.svg">
+                    </a>
+                </div>
+
+                <div class = "box_body_addition box_padding2">
+                    <div class = "flex space_between box_padding3 line">
+                        <div>
+                            <span class = "darker_white">ქულა:</span>
+                            <span class = "light_font">10</span>
+                        </div>
+
+                        <div>
+                            <span class = "darker_white">ფსონი:</span>
+                            <span class = "light_font">500 ₾</span>
+                        </div>
+
+                        <div>
+                            <span class = "darker_white">მოგება:</span>
+                            <span class = "light_font">0 ₾</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bottom_line green_line"></div>
+            </div>
+
+
+
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

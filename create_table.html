@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="modals.css" rel="stylesheet" />
+    <link href="filter.css" rel="stylesheet" />
+    <link href="history.css" rel="stylesheet" />
+    <link href="create_table.css" rel="stylesheet" />
+    <link href="sitting_on_table.css" rel="stylesheet" />
+    <!-- CSS only -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Large Modal</h2>
+    <!-- Trigger the modal with a button -->
+    <a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</a>
+  
+          <!-- Modal -->
+    <div id="myModal" class="modal fade in" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 style="color: #CDD0E8;" class="modal-title">მაგიდის შექმნა</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <img src="assets/images/i_money.svg">
+              <span>მაქსიმალური ფსონი არის 500 ₾</span>
+            </div>
+
+            <div>
+              <img src="assets/images/i_money.svg">
+              <span>მინიმალური ფსონი არის 0 ₾</span>
+            </div>
+
+            <span class = "point_font">ქულა</span>
+
+            <div class = "wrap_small flex space_between box_margin" id = "group1">
+              <label class="checkbox_circle">
+                <input type="radio" name = "group1">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">1</span>
+              </label>
+              
+              <label class="checkbox_circle">
+                <input type="radio" name = "group1">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">3</span>
+              </label>
+              
+              <label class="checkbox_circle">
+                <input type="radio" name = "group1">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">7</span>
+              </label>
+              
+              <label class="checkbox_circle">
+                <input type="radio" name = "group1">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">11</span>
+              </label>
+              
+              <label class="checkbox_circle">
+                <input type="radio" name = "group1">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">21</span>
+              </label>
+            </div>
+
+
+            <span class = "point_font">პარტიის დავი</span>
+
+            <div class = "flex space_evenly box_margin"  id = "group2">
+              <label class="checkbox_circle">
+                <input type="radio" name = "group2">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">არა</span>
+              </label>
+
+              <label class="checkbox_circle">
+                <input type="radio" name = "group2">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">დიახ</span>
+              </label>
+            </div>
+
+            <div class = "flex flex_wrap box_margin"  id = "group3">
+              <label class="checkbox_circle wrap_addition">
+                <input type="radio" name = "group3">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">დავი</span>
+              </label>
+              
+              <label class="checkbox_circle wrap_addition">
+                <input type="radio" name = "group3">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">სე</span>
+              </label>
+            
+              <label class="checkbox_circle wrap_addition">
+                <input type="radio" name = "group3">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">ჩარი</span>
+              </label>
+              
+              <label class="checkbox_circle wrap_addition">
+                <input type="radio" name = "group3">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">ფანჯი</span>
+              </label>
+              
+              <label class="checkbox_circle wrap_addition">
+                <input type="radio" name = "group3">
+                <span class="checkmark_circle"></span>
+                <span class="check_label">შაში</span>
+              </label>
+            </div>
+
+            <a class = "h4_font h4_active">მაგიდის შექმნა</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
