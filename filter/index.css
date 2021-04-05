@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #202126 !important;
+    width: 100%;
+    touch-action: manipulation;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.one_side {
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.full_btn {
+    font-size: 20px;
+    outline: none;
+    user-select: none;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    background-color: #43A047;
+}
+
+.user {
+    border-radius: 8px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-color: #2D3540;
+    outline: none;
+    border: none;
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 15px;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.current_game {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #282C36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+}
+
+    .current_game > span {
+        font-size: 13px;
+        margin: 0 5px 15px 5px;
+        color: #4B546A;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none !important;
+    }
+
+
+    .current_game > div {
+        margin: 5px;
+    }
+
+.circle {
+    background-color: #282932;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_with_num {
+    color: #4D4F6A;
+    display: flex;
+    flex-direction: column;
+}
+
+    .text_with_num > span {
+        margin-top: 3px;
+        color: #FFFFFF;
+    }
+
+    .text_with_num > span {
+        font-size: 13px;
+    }
+
+.infos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+.infos_and_icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.circle > i {
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.upper_body {
+    background-color: #23242B;
+}
+
+.tables > a > span {
+    color: #404153;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 15px 25px 15px;
+}
+
+.game__type__link__active {
+    color: #FFFFFF !important;
+    position: relative;
+}
+
+    .game__type__link__active:after {
+        content: " ";
+        position: absolute;
+        left: 40%;
+        border-radius: 40px 10px 5px 5px;
+        height: 5px;
+        border-bottom: 2px solid #FFCF72;
+        display: table-cell;
+        width: 20px;
+    }
+
+.money_box {
+    background-color: #292D39;
+    padding: 12px 8px 12px 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    border: none;
+    outline: none;
+}
+
+.money {
+    padding: 12px 20px 12px 20px;
+}
+
+.money_box > span {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space_evenly {
+    justify-content: space-evenly;
+}
+
+.scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.money_box_active {
+    background-color: #FFCF72 !important;
+}
+
+.won_active {
+    background-color: #3CB878 !important;
+}
+
+.lost_active {
+    background-color: #BE567C !important;
+}
+
+.money_box_active > span {
+    color: #282C36 !important;
+    font-size: 13px;
+}
+
+.line1 {
+    height: 2px;
+    background-color: #40435C
+}
+
+.line2 {
+    height: 2px;
+    background-color: #1C1E25;
+}
+
+.details_box {
+    width: 100%;
+}
+
+.game_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.game_box_addition1 {
+    border: 1px solid rgba(205, 208, 232, .3);
+    background-color: #232630;
+}
+
+.game_box_addition2 {
+    background-color: #1B1D23;
+}
+
+.details_box_info > span {
+    color: #40435C;
+    font-size: 12px;
+}
+
+.details_box_info > div {
+    color: #CDD0E8;
+    background-color: #272939;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.details_box_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.game_box > img {
+    margin-top: 10px;
+}
+
+.gamers {
+    width: 100%;
+    color: #40435C;
+    padding: 10px;
+}
+
+.japan {
+    color: #CDD0E8;
+    margin: 10px;
+}
+
+.game_boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.play_or_watch {
+    background-color: #212530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    margin: 5px;
+    border-radius: 5px;
+    width: 83%;
+    outline: none;
+    border: none;
+}
+
+.play_or_watch_addition1 {
+    background-color: #262A35;
+}
+
+.play_or_watch_addition2 {
+    background-color: #212530;
+}
+
+.play_or_watch > span {
+    color: #707DA3;
+    margin-right: 10px;
+}
+
+.gamersList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .gamersList > div {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #CDD0E8;
+        width: 46%;
+        /* display: flex;
+    justify-content: space-between; */
+    }
+
+.history_box_addition {
+    width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+    .money_box > span {
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+
+    .current_game > span,
+    .text_with_num > span,
+    .tables > a,
+    .japan,
+    .gamers > span,
+    .gamersList > div,
+    .details_box_info > span,
+    .play_or_watch > span,
+    .modal-title,
+    .bet_box > div,
+    .slider_money {
+        font-size: 30px;
+    }
+
+    .slider_money {
+        width: 90px !important;
+    }
+
+    .current_game > div > img {
+        height: 50px;
+    }
+
+    .money_box > img {
+        width: 40px;
+    }
+
+    .game_box {
+        width: 30%;
+    }
+
+    .circle > i {
+        font-size: 30px;
+        width: 30px;
+    }
+
+    .play_or_watch > img {
+        height: 25px;
+    }
+
+    .h4_font {
+        font-size: 30px !important;
+    }
+
+    .modal-body > span {
+        font-size: 30px;
+    }
+
+    .check_label {
+        font-size: 30px;
+    }
+
+    .checkbox_circle, .checkbox_square {
+        line-height: 0.8 !important;
+    }
+
+    .modal-body > div {
+        margin-bottom: 60px;
+        margin-top: 45px;
+    }
+
+    .header > div,
+    .box_padding3 > div,
+    .date,
+    .input_money {
+        padding: 30px;
+        font-size: 30px !important;
+    }
+
+    .circle_addition_history {
+        width: 134px;
+    }
+
+        .circle_addition_history > img {
+            width: 50%;
+        }
+
+    h4 {
+        font-size: 35px !important;
+    }
+
+    .circle_addition_table > img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .wrap_small {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+        .wrap_small > .checkbox_circle,
+        .wrap_small > .checkbox_square {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 13px !important;
+        }
+}
+
+

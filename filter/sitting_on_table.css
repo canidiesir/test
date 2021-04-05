@@ -1,0 +1,46 @@
+.sitting_on_table_japan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle_addition_table{
+    background-color: #23212A;
+    padding: 30px;
+}
+
+.bet_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.bet_box_addition{
+    border-bottom: 2px solid#21232B;
+}
+
+.bet_box_info{
+    font-size: 15px;
+    color: #7C81A3;
+}
+
+.bet_box_info_right{
+    color: #CDD0E8;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.direction_row{
+    flex-direction: row;
+}
+
+.starting_now{
+    text-align: center;
+    color: #9EA2C4;
+    margin-bottom: 20px;
+}
+
+.dots{
+    margin-bottom: 50px;
+}
